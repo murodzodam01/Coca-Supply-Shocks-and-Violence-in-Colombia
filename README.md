@@ -52,9 +52,7 @@ The supplied data file is included unchanged as `data00_AngristKugler.tab` **bes
 
 Open the notebook on GitHub or in a Jupyter-compatible editor to inspect its saved figures and regression tables. No execution is required to review those results.
 
-Keep the notebook and data file in the same directory. The dependency list is unpinned because the original execution environment is unknown.
-
-**Known execution dependency:** the DiD-summary section reloads `data` without reconstructing `growafter`; later regressions reference that column. A fresh top-to-bottom execution may therefore fail at that point. This version intentionally preserves the original code, rather than silently fixing it. The saved outputs remain available, but a successful fresh run is not claimed.
+Keep the notebook and data file in the same directory. 
 
 ## Files
 
