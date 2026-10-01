@@ -2,7 +2,7 @@
 
 An applied **difference-in-differences** case study exploring whether coca-growing departments experienced a larger change in recorded violence than comparison departments. The analysis demonstrates causal reasoning beyond A/B testing through an observational research design, pre-trend diagnostics, a placebo test, and covariate-adjusted regressions.
 
-[Open the notebook](Coca_Violence_Difference_in_Differences.ipynb)
+[Open the notebook](Original_Coca_Violence_Difference_in_Differences.ipynb)
 
 ## Project overview
 
@@ -52,13 +52,6 @@ The supplied data file is included unchanged as `data00_AngristKugler.tab` **bes
 
 Open the notebook on GitHub or in a Jupyter-compatible editor to inspect its saved figures and regression tables. No execution is required to review those results.
 
-For local exploration, install the imported packages and a notebook interface:
-
-```bash
-python -m pip install -r requirements.txt
-python -m jupyterlab
-```
-
 Keep the notebook and data file in the same directory. The dependency list is unpinned because the original execution environment is unknown.
 
 **Known execution dependency:** the DiD-summary section reloads `data` without reconstructing `growafter`; later regressions reference that column. A fresh top-to-bottom execution may therefore fail at that point. This version intentionally preserves the original code, rather than silently fixing it. The saved outputs remain available, but a successful fresh run is not claimed.
@@ -67,9 +60,8 @@ Keep the notebook and data file in the same directory. The dependency list is un
 
 | File | Purpose |
 |---|---|
-| `Coca_Violence_Difference_in_Differences.ipynb` | English project narrative with original code and saved outputs |
+| `Original_Coca_Violence_Difference_in_Differences.ipynb` | English project narrative with original code and saved outputs |
 | `data00_AngristKugler.tab` | Unmodified supplied data |
-| `requirements.txt` | Packages imported by the notebook plus JupyterLab |
 | `README.md` | Project overview, saved findings, and limitations |
 
 ## Preservation and attribution
