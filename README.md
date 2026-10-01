@@ -6,7 +6,7 @@ An applied **difference-in-differences** case study exploring whether coca-growi
 
 ## Project overview
 
-The study compares **1991вЂ“1993** with **1996вЂ“1998**, using an extract associated with Angrist and Kugler (2008). Exposure is defined by nine department codes classified as coca-growing. The original research describes disruption of the coca supply air bridge beginning in 1994; 1996 is the start of the selected post-analysis window, not the event date.
+The study compares **1991-1993** with **1996-1998**, using an extract associated with Angrist and Kugler (2008). Exposure is defined by nine department codes classified as coca-growing. The original research describes disruption of the coca supply air bridge beginning in 1994; 1996 is the start of the selected post-analysis window, not the event date.
 
 The central question is whether violence changed more in exposed regions than in comparison regions. A causal interpretation requires parallel counterfactual trends and the absence of relevant differential shocks, anticipation, or spillovers.
 
@@ -33,13 +33,13 @@ The outcome is `log(violent_ + 1) - log(populati + 1)`, a log-smoothed populatio
 
 All three models report conventional, nonrobust OLS standard errors. The baseline interval is approximately [0.083, 0.422].
 
-The placebo coefficient is approximately в€’0.0124 (p = 0.909). Individual pre-year interaction tests also fail to reject. These diagnostics do not prove parallel trends, establish random assignment, or rule out confounding. The notebook does not implement a joint pre-trend test, clustered inference, department fixed effects, or an event-study model.
+The placebo coefficient is approximately 0.0124 (p = 0.909). Individual pre-year interaction tests also fail to reject. These diagnostics do not prove parallel trends, establish random assignment, or rule out confounding. The notebook does not implement a joint pre-trend test, clustered inference, department fixed effects, or an event-study model.
 
 The positive estimates describe a differential change in the transformed outcome. They should not be presented as a verified percentage increase in individual mortality risk or proof of a specific mechanism.
 
 ## Data and interpretation
 
-The included tab-separated extract contains **12,544 rows**, **11 source columns**, **33 department codes**, and years **1990вЂ“2000**. Observations are departmentвЂ“yearвЂ“age-codeвЂ“sex-code cells. The main regressions use 6,449 observations.
+The included tab-separated extract contains **12,544 rows**, **11 source columns**, **33 department codes**, and years **1990-2000**. The main regressions use 6,449 observations.
 
 - `age` contains category codes, not literal ages. The original regressions nevertheless treat it numerically.
 - Population is missing in 682 rows. The original models drop rows with missing required values through their default behavior.
