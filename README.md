@@ -14,7 +14,7 @@ The central question is whether violence changed more in exposed regions than in
 
 - Construction of exposure, period, and interaction indicators.
 - Distributional exploration by exposure group and sex code.
-- Descriptive beforeвЂ“after changes by age category.
+- Descriptive before-after changes by age category.
 - Linear and categorical pre-treatment trend regressions.
 - A pre-period placebo using 1992вЂ“1993 as a false post-period.
 - Four-mean and regression-based difference-in-differences estimation.
@@ -33,7 +33,7 @@ The outcome is `log(violent_ + 1) - log(populati + 1)`, a log-smoothed populatio
 
 All three models report conventional, nonrobust OLS standard errors. The baseline interval is approximately [0.083, 0.422].
 
-The placebo coefficient is approximately 0.0124 (p = 0.909). Individual pre-year interaction tests also fail to reject. These diagnostics do not prove parallel trends, establish random assignment, or rule out confounding. The notebook does not implement a joint pre-trend test, clustered inference, department fixed effects, or an event-study model.
+The placebo coefficient is approximately -0.0124 (p = 0.909). Individual pre-year interaction tests also fail to reject. These diagnostics do not prove parallel trends, establish random assignment, or rule out confounding. The notebook does not implement a joint pre-trend test, clustered inference, department fixed effects, or an event-study model.
 
 The positive estimates describe a differential change in the transformed outcome. They should not be presented as a verified percentage increase in individual mortality risk or proof of a specific mechanism.
 
